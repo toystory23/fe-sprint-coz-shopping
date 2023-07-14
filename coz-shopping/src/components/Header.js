@@ -25,7 +25,6 @@ export default function Header() {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
-
   return (
     <header>
       <div className="logo_container">

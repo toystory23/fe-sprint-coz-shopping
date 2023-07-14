@@ -9,7 +9,7 @@ header {
   margin-top: 0.5rem;
   height: 5rem;
   box-shadow: 0px, 8px, 8px, 0px gray;
-  /* border-bottom: 0.5px solid gray; */
+  border-bottom: 0.5px solid gray;
 }
 .logo_container {
   margin-left: 5rem;
@@ -68,18 +68,20 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70.5rem;
+  width: 100%;
   height: 50rem;
   justify-content: space-evenly;
-  margin-left: 15rem;
+  margin-left: 0rem;
 }
 .itemlist {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  /* justify-content: space-between; */
 }
 .itemlist_container {
-  margin-right: 1rem;
-  width: 16.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 3rem;
+  width: 20rem;
   height: 16.5rem;
 }
 .image_container {
@@ -91,6 +93,7 @@ main {
   width: 100%;
   height: 100%;
   border-radius: 1rem;
+  cursor: pointer;
 }
 .text {
   font-size: 1.5rem;
@@ -100,8 +103,81 @@ main {
   display: flex;
   justify-content: space-between;
 }
-.bookmark_container {
-  margin-right: 1rem;
-  width: 16.5rem;
+.bookmarklist_container {
+  margin-right: 1.5rem;
+  width: 20rem;
   height: 16.5rem;
+}
+.name {
+  display: flex;
+  justify-content: space-between;
+}
+.brand {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.price {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal_content {
+  width: 60rem;
+  height: 40rem;
+  z-index: 999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal_image {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+}
+.close {
+  position: absolute;
+  right: 0.5rem;
+  top: -0.5rem;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.bold {
+  font-weight: bold;
+}
+/*product*/
+
+.items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.item_filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Buttons {
+  display: flex;
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button > img {
+  cursor: pointer;
 }
