@@ -1,3 +1,7 @@
-export default function Itemlist() {
-  return <div>상품 리스트 예정</div>;
+export default function Itemlist({ title, image_url }) {
+  return (
+    <div className="itemlist_container">
+      <img className="product_img" alt={title} src={image_url} />
+    </div>
+  );
 }
